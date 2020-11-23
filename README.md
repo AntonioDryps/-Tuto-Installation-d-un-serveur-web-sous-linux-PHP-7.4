@@ -37,3 +37,15 @@ Nous allons maintenant modifier le mot de passe root MYSQL Serveur
 
 Arrêtez le serveur de base de données en lançant:
 
+```sudo systemctl stop
+
+sudo systemctl edit mysql
+
+#Mettre le ceci : (pour quitter CTRL X / y / y
+
+[Service]
+ExecStart=
+ExecStart=/usr/sbin/mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid
+
+sudo systemctl daemon-reload
+sudo systemctl start mysql
