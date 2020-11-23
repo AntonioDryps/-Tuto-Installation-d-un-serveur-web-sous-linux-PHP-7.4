@@ -66,6 +66,7 @@ Connexion mysql root avec votre nouveau MDP
 ```mysql -u root -p
 ```
 Installation de PHPMYADMIN
+
 ```sudo apt install phpmyadmin
 ```
 Installation des paquet pour phpmyadmin
