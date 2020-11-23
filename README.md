@@ -24,12 +24,12 @@ et installation :
 
 
 ```apt update && upgrade
-```apt -y install software-properties-common curl
-```LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
-```add-apt-repository -y ppa:chris-lea/redis-server
-```apt update
-```apt-add-repository universe
-```apt -y install php7.2 php7.2-cli php7.2-gd php7.2-mysql php7.2-pdo php7.2-mbstring php7.2-tokenizer php7.2-bcmath php7.2-xml php7.2-fpm php7.2-curl php7.2-zip mysql-server apache2 tar unzip git redis-server 
+apt -y install software-properties-common curl
+LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
+add-apt-repository -y ppa:chris-lea/redis-server
+apt update
+apt-add-repository universe
+apt -y install php7.2 php7.2-cli php7.2-gd php7.2-mysql php7.2-pdo php7.2-mbstring php7.2-tokenizer php7.2-bcmath php7.2-xml php7.2-fpm php7.2-curl php7.2-zip mysql-server apache2 tar unzip git redis-server 
 ```
 
 fgdhfgdh
