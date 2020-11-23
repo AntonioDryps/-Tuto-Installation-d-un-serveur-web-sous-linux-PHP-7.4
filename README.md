@@ -49,3 +49,11 @@ ExecStart=/usr/sbin/mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid
 
 sudo systemctl daemon-reload
 sudo systemctl start mysql
+```
+Changer le mot de passe root
+```sudo mysql -u root
+FLUSH PRIVILEGES;
+UPDATE mysql.user SET authentication_string = PASSWORD('VOTREMDP') WHERE user = 'root';
+UPDATE mysql.user SET plugin = 'mysql_native_password' WHERE user = 'root';
+```
+
