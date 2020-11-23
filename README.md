@@ -63,11 +63,13 @@ sudo systemctl daemon-reload
 sudo systemctl restart mysql
 ```
 Connexion mysql root avec votre nouveau MDP
-```mysql -u root -p
+```
+mysql -u root -p
 ```
 Installation de PHPMYADMIN
 
-```sudo apt install phpmyadmin
+```
+sudo apt install phpmyadmin
 ```
 Installation des paquet pour phpmyadmin
 
