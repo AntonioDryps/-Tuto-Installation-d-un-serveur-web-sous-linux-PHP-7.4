@@ -56,4 +56,29 @@ FLUSH PRIVILEGES;
 UPDATE mysql.user SET authentication_string = PASSWORD('VOTREMDP') WHERE user = 'root';
 UPDATE mysql.user SET plugin = 'mysql_native_password' WHERE user = 'root';
 ```
+Rétablir les paramètres normaux de votre serveur de base de données
+```sudo systemctl unset-environment MYSQLD_OPTS
+sudo systemctl revert mysql
+sudo systemctl daemon-reload
+sudo systemctl restart mysql
+```
+Connexion mysql root avec votre nouveau MDP
+```mysql -u root -p
+```
+Installation de PHPMYADMIN
+```sudo apt install phpmyadmin
+```
+Installation des paquet pour phpmyadmin
 
+```sudo apt install php libapache2-mod-php
+sudo apt install php-mbstring
+sudo a2dismod mpm_event
+sudo a2enmod mpm_prefork
+service apache2 restart
+```
+Installation des paquet MYSQLI pour phpmyadmin
+
+```apt install php-mysql
+apt policy php-mysql
+service apache2 restart
+```
