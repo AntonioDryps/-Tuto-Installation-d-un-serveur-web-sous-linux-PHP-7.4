@@ -74,7 +74,7 @@ sudo apt install phpmyadmin
 Installation des paquet pour phpmyadmin
 
 ```sudo apt install php libapache2-mod-php
-sudo apt install php-mbstring
+sudo apt install php7.2-mbstring
 sudo a2dismod mpm_event
 sudo a2enmod mpm_prefork
 service apache2 restart
