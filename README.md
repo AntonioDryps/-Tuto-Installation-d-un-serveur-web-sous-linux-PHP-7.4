@@ -36,6 +36,11 @@ apt -y install php7.4 php7.4-cli php7.4-gd php7.4-mysql php7.4-pdo php7.4-mbstri
 Voila vous avez installer les paquets pour le serveur web
 Nous allons maintenant modifier le mot de passe root MYSQL Serveur
 
+ou CREATE USER 'user1'@'%' IDENTIFIED BY 'admin';
+GRANT ALL PRIVILEGES ON *.* TO 'user1'@'%' WITH GRANT OPTION;
+
+
+
 Arrêtez le serveur de base de données en lançant:
 
 ```sudo systemctl stop
